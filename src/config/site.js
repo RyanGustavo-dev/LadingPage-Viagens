@@ -86,7 +86,7 @@ export const site = {
       state: 'GO',
       tagline: 'Parques aquáticos e as águas termais mais quentes do Brasil',
       icon: 'droplet',
-      image: 'imagens/caldasnovas.jpg',
+      image: 'imagens/caldasnovas.jpeg',
       whatsappHref: whatsappHref('Olá! Gostaria de saber o valor do pacote para Caldas Novas ♨️'),
     },
     {
