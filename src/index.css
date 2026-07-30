@@ -16,6 +16,17 @@ html {
   scroll-behavior: smooth;
 }
 
+/* O cabeçalho é fixo (5rem de altura), então ao navegar pelos links do menu o
+   título da seção ficava escondido atrás dele. Este recuo reserva esse espaço. */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Evita que uma palavra comprida (ex.: nomes de destinos) estufe o layout no celular */
+h1, h2, h3 {
+  overflow-wrap: break-word;
+}
+
 body {
   font-family: var(--font-body);
   background: #f7f8fb;

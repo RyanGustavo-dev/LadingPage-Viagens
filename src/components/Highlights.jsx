@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { site } from '../config/site'
+import { asset } from '../utils/asset'
 import Icon from './Icon'
 
 const gradients = {
@@ -29,7 +30,12 @@ export default function Highlights() {
             >
               <div className="relative h-44 w-full">
                 {h.image ? (
-                  <img src={h.image} alt={h.title} className="h-full w-full object-cover" />
+                  <img
+                    src={asset(h.image)}
+                    alt={h.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover"
+                  />
                 ) : (
                   <div
                     className={`flex h-full w-full items-center justify-center bg-gradient-to-br ${gradients[h.icon]}`}

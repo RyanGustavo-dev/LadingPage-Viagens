@@ -2,10 +2,12 @@ import React from 'react';
 
 const Reviews = () => {
   return (
-    <section id="avaliacoes" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#2D3142] mb-4">O que dizem nossos clientes</h2>
+    <section id="avaliacoes" className="bg-slate-50 py-20 md:py-28">
+      <div className="container-page">
+        <div className="mx-auto mb-10 max-w-xl text-center">
+          <h2 className="text-3xl font-extrabold text-brand-blue-deep md:text-4xl">
+            O que dizem nossos clientes
+          </h2>
         </div>
         
         {/* Widget do Elfsight com as avaliações dinâmicas */}

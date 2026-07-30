@@ -35,7 +35,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-[#051d47]/95 via-[#051d47]/70 to-[#051d47]/15" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#051d47]/70 via-transparent to-transparent" />
 
-        <SunMascot className="absolute right-6 top-24 w-16 h-16 md:right-16 md:top-28 md:w-24 md:h-24 drop-shadow-xl" />
+        <SunMascot className="absolute right-4 top-16 w-12 h-12 drop-shadow-xl sm:right-6 sm:top-24 sm:w-16 sm:h-16 md:right-16 md:top-28 md:w-24 md:h-24" />
 
         <motion.div
           style={{ opacity: contentOpacity, y: contentY }}
@@ -46,7 +46,7 @@ export default function Hero() {
         >
           <motion.span
             variants={item}
-            className="mb-4 inline-flex w-fit items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-brand-sun backdrop-blur-sm"
+            className="mb-4 inline-flex w-fit items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-brand-sun backdrop-blur-sm sm:px-4 sm:py-1.5 sm:text-xs sm:tracking-widest"
           >
             Desde 2013 em Ribeirão das Neves
           </motion.span>
@@ -55,12 +55,12 @@ export default function Hero() {
             Sua próxima viagem começa <span className="text-brand-sun">aqui</span>
           </motion.h1>
 
-          <motion.p variants={item} className="mt-6 max-w-lg text-base leading-relaxed text-white/85 md:text-lg">
+          <motion.p variants={item} className="mt-4 max-w-lg text-base leading-relaxed text-white/85 sm:mt-6 md:text-lg">
             Pacotes de viagem, passagens aéreas e rodoviárias para o Brasil e o mundo, com
             atendimento personalizado, ágil e atencioso do início ao fim da sua jornada.
           </motion.p>
 
-          <motion.div variants={item} className="mt-8 flex flex-wrap gap-3">
+          <motion.div variants={item} className="mt-6 flex flex-wrap gap-3 sm:mt-8">
             <a
               href={site.whatsapp.href}
               target="_blank"
@@ -79,11 +79,11 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          <motion.ul variants={item} className="mt-10 flex flex-wrap gap-3">
+          <motion.ul variants={item} className="mt-6 flex flex-wrap gap-2 sm:mt-10 sm:gap-3">
             {['Pacotes Nacionais e Internacionais', 'Aéreo e Rodoviário', 'Atendimento Personalizado'].map((t) => (
               <li
                 key={t}
-                className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-semibold text-white/90 backdrop-blur-sm sm:text-sm"
+                className="rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-[11px] font-semibold text-white/90 backdrop-blur-sm sm:px-4 sm:py-2 sm:text-sm"
               >
                 {t}
               </li>
@@ -93,7 +93,7 @@ export default function Hero() {
 
         <motion.div
           style={{ opacity: hintOpacity }}
-          className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-xs uppercase tracking-widest text-white/70"
+          className="absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 flex-col items-center gap-2 text-xs uppercase tracking-widest text-white/70 sm:flex"
         >
           <span>Role para ver a viagem começar</span>
           <div className="relative h-9 w-px overflow-hidden bg-white/25">

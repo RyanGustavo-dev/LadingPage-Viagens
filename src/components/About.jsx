@@ -43,15 +43,17 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="grid grid-cols-3 gap-4"
+          className="grid grid-cols-3 gap-2 sm:gap-4"
         >
           {stats.map((s) => (
             <div
               key={s.label}
-              className="rounded-2xl bg-gradient-to-br from-brand-blue to-brand-blue-dark p-6 text-center text-white shadow-lg"
+              className="rounded-2xl bg-gradient-to-br from-brand-blue to-brand-blue-dark p-3 text-center text-white shadow-lg sm:p-6"
             >
-              <div className="text-2xl font-extrabold text-brand-sun md:text-3xl">{s.value}</div>
-              <div className="mt-2 text-xs font-medium leading-tight text-white/80 md:text-sm">
+              <div className="text-xl font-extrabold text-brand-sun sm:text-2xl md:text-3xl">
+                {s.value}
+              </div>
+              <div className="mt-2 text-[11px] font-medium leading-tight break-words hyphens-auto text-white/80 sm:text-xs md:text-sm">
                 {s.label}
               </div>
             </div>

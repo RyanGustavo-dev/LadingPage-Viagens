@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { site } from '../config/site'
+import { asset } from '../utils/asset'
 import Icon from './Icon'
 
 const gradients = {
@@ -38,8 +39,9 @@ export default function Destinations() {
               <div className="relative h-48 w-full overflow-hidden">
                 {d.image ? (
                   <img
-                    src={d.image}
+                    src={asset(d.image)}
                     alt={d.name}
+                    loading="lazy"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 ) : (

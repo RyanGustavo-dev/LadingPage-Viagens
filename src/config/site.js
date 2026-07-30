@@ -99,7 +99,7 @@ export const site = {
       description:
         'Europa, América do Norte, América do Sul, Ásia, Oceania. Escolha seu destino!',
       icon: 'globe',
-      image: 'imagens/aviao.png',
+      image: 'imagens/aviao.jpg',
       whatsappHref: whatsappHref('Olá! Gostaria de saber mais sobre os pacotes internacionais.'),
     },
     {
@@ -108,21 +108,22 @@ export const site = {
       description:
         'Está sem programa para o fim de semana? Que tal uma pousada romântica ou um hotel fazenda?',
       icon: 'calendar',
-      image: 'imagens/hoteis.jpeg',
+      image: 'imagens/fimdesemana.jpg',
       whatsappHref: whatsappHref('Olá! Gostaria de dicas para um fim de semana especial.'),
     },
   ],
 
-  // Fotos reais ainda não recebidas — cada destino usa um cartão com ícone
-  // e gradiente até que uma imagem seja enviada. Basta preencher `image`
-  // com o caminho do arquivo em `public/destinos/` (ex.: '/destinos/cabo-frio.jpg').
+  // `image` aponta para um arquivo dentro de `public/` (ex.: 'imagens/cabofrio.jpg').
+  // O caminho é resolvido em tempo de execução por `src/utils/asset.js`, que aplica
+  // a base de publicação — por isso escreva sem a barra inicial. Se `image` for null,
+  // o card cai no ícone com gradiente.
   destinations: [
     {
       name: 'Cabo Frio',
       state: 'RJ',
       tagline: 'Praias e lagoas cristalinas na Região dos Lagos',
       icon: 'wave',
-      image: '/imagens/cabofrio.jpg',
+      image: 'imagens/cabofrio.jpg',
       whatsappHref: whatsappHref('Olá! Gostaria de saber o valor do pacote para Cabo Frio 🏖️'),
     },
     {
@@ -130,7 +131,7 @@ export const site = {
       state: 'GO',
       tagline: 'Parques aquáticos e as águas termais mais quentes do Brasil',
       icon: 'droplet',
-      image: '/imagens/caldasnovas.jpeg',
+      image: 'imagens/caldasnovas.jpeg',
       whatsappHref: whatsappHref('Olá! Gostaria de saber o valor do pacote para Caldas Novas ♨️'),
     },
     {
