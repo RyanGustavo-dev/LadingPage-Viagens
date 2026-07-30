@@ -42,6 +42,20 @@ export const site = {
       'https://www.google.com/maps?q=Av.+Castelo+Branco,+445+-+Menezes+(Justin%C3%B3polis),+Ribeir%C3%A3o+das+Neves+-+MG,+33913-280,+Brasil&hl=pt-BR&z=16&output=embed',
   },
 
+  reviews: {
+    rating: 5.0,
+    reviewCount: 132,
+    googleReviewUrl: 'https://share.google/BA2JcP1Gp7azruMoP',
+    items: [
+      {
+        author: 'W.',
+        rating: 5,
+        date: '',
+        text: 'Hotel perfeito: recepção, atendimento, comida, quarto.',
+      },
+    ],
+  },
+
   services: [
     {
       title: 'Pacotes de Viagem',
@@ -69,6 +83,36 @@ export const site = {
     },
   ],
 
+  highlights: [
+    {
+      tag: 'Hospedagem',
+      title: 'Hotéis e Resorts',
+      description:
+        'Os mais belos e luxuosos resorts estão aqui. Conheça e faça sua reserva com um de nossos agentes.',
+      icon: 'hotel',
+      image: 'imagens/hoteis.jpeg',
+      whatsappHref: whatsappHref('Olá! Gostaria de conhecer as opções de hotéis e resorts.'),
+    },
+    {
+      tag: 'Internacional',
+      title: 'Pacotes Internacionais',
+      description:
+        'Europa, América do Norte, América do Sul, Ásia, Oceania. Escolha seu destino!',
+      icon: 'globe',
+      image: 'imagens/aviao.png',
+      whatsappHref: whatsappHref('Olá! Gostaria de saber mais sobre os pacotes internacionais.'),
+    },
+    {
+      tag: 'Escapadas',
+      title: 'Fim de Semana Legal',
+      description:
+        'Está sem programa para o fim de semana? Que tal uma pousada romântica ou um hotel fazenda?',
+      icon: 'calendar',
+      image: 'imagens/hoteis.jpeg',
+      whatsappHref: whatsappHref('Olá! Gostaria de dicas para um fim de semana especial.'),
+    },
+  ],
+
   // Fotos reais ainda não recebidas — cada destino usa um cartão com ícone
   // e gradiente até que uma imagem seja enviada. Basta preencher `image`
   // com o caminho do arquivo em `public/destinos/` (ex.: '/destinos/cabo-frio.jpg').
@@ -78,7 +122,7 @@ export const site = {
       state: 'RJ',
       tagline: 'Praias e lagoas cristalinas na Região dos Lagos',
       icon: 'wave',
-      image: 'imagens/cabofrio.jpg',
+      image: '/imagens/cabofrio.jpg',
       whatsappHref: whatsappHref('Olá! Gostaria de saber o valor do pacote para Cabo Frio 🏖️'),
     },
     {
@@ -86,7 +130,7 @@ export const site = {
       state: 'GO',
       tagline: 'Parques aquáticos e as águas termais mais quentes do Brasil',
       icon: 'droplet',
-      image: 'imagens/caldasnovas.jpeg',
+      image: '/imagens/caldasnovas.jpeg',
       whatsappHref: whatsappHref('Olá! Gostaria de saber o valor do pacote para Caldas Novas ♨️'),
     },
     {

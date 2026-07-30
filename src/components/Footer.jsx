@@ -52,9 +52,11 @@ export default function Footer() {
           <h3 className="text-sm font-bold uppercase tracking-widest text-brand-sun">Navegação</h3>
           <ul className="mt-4 space-y-3 text-sm text-white/80">
             <li><a href="#inicio" className="hover:text-white">Início</a></li>
+            <li><a href="#promocoes" className="hover:text-white">Promoções</a></li>
             <li><a href="#sobre" className="hover:text-white">Sobre</a></li>
             <li><a href="#servicos" className="hover:text-white">Serviços</a></li>
             <li><a href="#destinos" className="hover:text-white">Destinos</a></li>
+            <li><a href="#avaliacoes" className="hover:text-white">Avaliações</a></li>
             <li><a href="#localizacao" className="hover:text-white">Localização</a></li>
           </ul>
         </div>

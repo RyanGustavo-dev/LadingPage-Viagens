@@ -3,6 +3,7 @@ import { site } from '../config/site'
 import Icon from './Icon'
 
 const links = [
+  { href: '#promocoes', label: 'Promoções' },
   { href: '#sobre', label: 'Sobre' },
   { href: '#servicos', label: 'Serviços' },
   { href: '#destinos', label: 'Destinos' },

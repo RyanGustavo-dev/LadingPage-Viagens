@@ -53,6 +53,24 @@ const paths = {
       <path d="M9 22v-6a3 3 0 0 1 6 0v6" />
     </>
   ),
+  hotel: (
+    <>
+      <path d="M3 21h18M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16" />
+      <path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1" />
+    </>
+  ),
+  globe: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+    </>
+  ),
+  calendar: (
+    <>
+      <rect x="3" y="5" width="18" height="16" rx="2" />
+      <path d="M3 10h18M8 3v4M16 3v4" />
+    </>
+  ),
 }
 
 export default function Icon({ name, className = 'w-5 h-5', strokeWidth = 2 }) {
