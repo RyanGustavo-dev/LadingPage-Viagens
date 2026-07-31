@@ -29,7 +29,8 @@ export default function Header() {
       }`}
     >
       <div className="container-page flex h-20 items-center justify-between">
-        <a href="#inicio" className="flex items-center gap-2 font-extrabold text-xl tracking-tight">
+        {/* py-2 dá ~44px de altura ao link, o alvo de toque mínimo no celular */}
+        <a href="#inicio" className="flex items-center gap-2 py-2 font-extrabold text-xl tracking-tight">
           <span className={scrolled || open ? 'text-brand-blue' : 'text-white'}>Marcinho</span>
           <span className="text-brand-orange">Viagens</span>
         </a>
