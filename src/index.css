@@ -14,6 +14,9 @@
 
 html {
   scroll-behavior: smooth;
+  /* Impede o Safari/Chrome no iOS de aumentar a fonte sozinho ao girar a tela */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* O cabeçalho é fixo (5rem de altura), então ao navegar pelos links do menu o
@@ -31,7 +34,10 @@ body {
   font-family: var(--font-body);
   background: #f7f8fb;
   color: #10233f;
-  overflow-x: hidden;
+  /* `clip` em vez de `hidden`: os dois cortam o estouro horizontal, mas
+     `hidden` transforma o body num container de rolagem e isso quebra o
+     `position: sticky` da Hero em vários navegadores mobile. */
+  overflow-x: clip;
 }
 
 h1, h2, h3, h4 {
@@ -71,4 +77,18 @@ h1, h2, h3, h4 {
 
 .animate-scroll-hint {
   animation: scroll-hint 1.8s ease-in-out infinite;
+}
+
+/* Quem pede menos movimento no sistema (comum em celular) recebe a página sem
+   animações decorativas nem rolagem suave. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-float-slow,
+  .animate-pulse-ring,
+  .animate-scroll-hint {
+    animation: none;
+  }
 }
